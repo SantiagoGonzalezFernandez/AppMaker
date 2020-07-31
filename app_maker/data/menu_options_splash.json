@@ -1,0 +1,10 @@
+{
+    "appName" : "app_maker",
+    "routes"  : [
+        {
+            "route" : "splashOne",
+            "icon"  : "filter_1",
+            "text"  : "Splash One"
+        }
+    ]
+}

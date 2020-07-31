@@ -1,0 +1,20 @@
+{
+    "appName" : "app_maker",
+    "routes"  : [
+        {
+            "route" : "splash",
+            "icon"  : "slideshow",
+            "text"  : "Splash"
+        },
+        {
+            "route" : "login",
+            "icon"  : "account_box",
+            "text"  : "Login"
+        },
+        {
+            "route" : "homeScreen",
+            "icon"  : "phone_iphone",
+            "text"  : "Home"
+        }
+    ]
+}
