@@ -5,6 +5,11 @@
             "route" : "splashOne",
             "icon"  : "filter_1",
             "text"  : "Splash One"
+        },
+        {
+            "route" : "splashTwo",
+            "icon"  : "filter_2",
+            "text"  : "Splash Two"
         }
     ]
 }
