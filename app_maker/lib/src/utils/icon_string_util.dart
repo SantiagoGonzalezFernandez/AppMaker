@@ -13,6 +13,10 @@ final _icons = <String, IconData>{
   //SplashScreen
   'filter_1' : Icons.filter_1,
   'filter_2' : Icons.filter_2,
+  'filter_3' : Icons.filter_3,
+  'filter_4' : Icons.filter_4,
+  'filter_5' : Icons.filter_5,
+  'filter_6' : Icons.filter_6,
   
 };
 

@@ -10,6 +10,26 @@
             "route" : "splashTwo",
             "icon"  : "filter_2",
             "text"  : "Splash Two"
+        },
+        {
+            "route" : "splashThree",
+            "icon"  : "filter_3",
+            "text"  : "Splash Three"
+        },
+        {
+            "route" : "splashFour",
+            "icon"  : "filter_4",
+            "text"  : "Splash Four"
+        },
+        {
+            "route" : "splashFive",
+            "icon"  : "filter_5",
+            "text"  : "Splash Five"
+        },
+        {
+            "route" : "splashSix",
+            "icon"  : "filter_6",
+            "text"  : "Splash Six"
         }
     ]
 }
