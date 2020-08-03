@@ -1,4 +1,5 @@
 //Imports that are not mine
+import 'package:app_maker/src/pages/Login/screens/login_one.dart';
 import 'package:app_maker/src/pages/Onboarding/screens/onboarding_one.dart';
 import 'package:app_maker/src/pages/Widget/widget_page.dart';
 import 'package:flutter/material.dart';
@@ -6,7 +7,7 @@ import 'package:flutter/material.dart';
 //Imports that are mine
 import 'package:app_maker/src/pages/home_page.dart';
 import 'package:app_maker/src/pages/Home/home_screen_page.dart';
-import 'package:app_maker/src/pages/Login/login_screen_page.dart';
+import 'package:app_maker/src/pages/Login/login_page.dart';
 import 'package:app_maker/src/pages/SplashScreen/splash_screen_page.dart';
 import 'package:app_maker/src/pages/SplashScreen/screens/splash_one.dart';
 import 'package:app_maker/src/pages/SplashScreen/screens/splash_two.dart';
@@ -35,7 +36,8 @@ Map<String, WidgetBuilder> getApplicationRoutes(){
     'onboardingOne' : (BuildContext context) => OnboardingOnePage(),  
 
     //Login Screen
-    'login'         : (BuildContext context) => LoginScreenPage(),
+    'login'         : (BuildContext context) => LoginPage(),
+    'loginOne'      : (BuildContext context) => LoginOnePage(),
 
     //Home Screen
     'homeScreen'    : (BuildContext context) => HomeScreenPage(),

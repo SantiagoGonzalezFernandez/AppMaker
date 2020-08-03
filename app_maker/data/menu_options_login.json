@@ -1,0 +1,10 @@
+{
+    "appName" : "app_maker",
+    "routes"  : [
+        {
+            "route" : "loginOne",
+            "icon"  : "filter_1",
+            "text"  : "Login One"
+        }
+    ]
+}
