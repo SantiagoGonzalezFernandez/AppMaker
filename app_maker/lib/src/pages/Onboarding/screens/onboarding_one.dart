@@ -169,7 +169,7 @@ class _OnboardingOnePageState extends State<OnboardingOnePage> {
                               height: 30.0
                             ),
                             Text(
-                              'Get a new experince\nof imagination',
+                              'Get a new experience\nof imagination',
                               style: kTitleStyle
                             ),
                             SizedBox(
