@@ -20,6 +20,11 @@
             "route" : "homeScreen",
             "icon"  : "phone_iphone",
             "text"  : "Home"
+        },
+        {
+            "route" : "widget",
+            "icon"  : "widgets",
+            "text"  : "Widget"
         }
     ]
 }

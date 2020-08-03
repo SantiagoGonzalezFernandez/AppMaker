@@ -1,5 +1,6 @@
 //Imports that are not mine
 import 'package:app_maker/src/pages/Onboarding/screens/onboarding_one.dart';
+import 'package:app_maker/src/pages/Widget/widget_page.dart';
 import 'package:flutter/material.dart';
 
 //Imports that are mine
@@ -38,5 +39,8 @@ Map<String, WidgetBuilder> getApplicationRoutes(){
 
     //Home Screen
     'homeScreen'    : (BuildContext context) => HomeScreenPage(),
+
+    //Widget
+    'widget'        : (BuildContext context) => WidgetPage(),
   };
 }

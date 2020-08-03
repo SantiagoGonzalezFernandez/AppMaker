@@ -9,6 +9,7 @@ final _icons = <String, IconData>{
   'slideshow'     : Icons.slideshow,
   'account_box'   : Icons.account_box,
   'phone_iphone'  : Icons.phone_iphone, 
+  'widgets'  : Icons.widgets, 
 
   //SplashScreen
   'filter_1' : Icons.filter_1,
