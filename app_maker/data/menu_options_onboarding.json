@@ -1,0 +1,10 @@
+{
+    "appName" : "app_maker",
+    "routes"  : [
+        {
+            "route" : "onboardingOne",
+            "icon"  : "filter_1",
+            "text"  : "Onboarding One"
+        }
+    ]
+}

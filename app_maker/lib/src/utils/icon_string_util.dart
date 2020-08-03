@@ -17,6 +17,9 @@ final _icons = <String, IconData>{
   'filter_4' : Icons.filter_4,
   'filter_5' : Icons.filter_5,
   'filter_6' : Icons.filter_6,
+
+  //Onboarding
+  'theaters' : Icons.theaters,
   
 };
 
