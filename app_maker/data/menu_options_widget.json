@@ -1,0 +1,10 @@
+{
+    "appName" : "app_maker",
+    "routes"  : [
+        {
+            "route" : "widgetOne",
+            "icon"  : "filter_1",
+            "text"  : "Bottom Navigation Bar"
+        }
+    ]
+}

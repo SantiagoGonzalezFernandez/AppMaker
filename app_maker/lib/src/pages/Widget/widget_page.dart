@@ -1,4 +1,5 @@
 //Imports that are not mine
+import 'package:app_maker/src/widgets/list_items_widget.dart';
 import 'package:flutter/material.dart';
 
 //Imports that are mine
@@ -13,9 +14,7 @@ class WidgetPage extends StatelessWidget {
         title: Text('Widget'),
         backgroundColor: Colors.pink,
       ),
-      body: Center(
-        child: Text('Widget Page'),
-      )
+      body: list('data/menu_options_widget.json')
     );
   }
 }

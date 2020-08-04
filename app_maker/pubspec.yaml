@@ -53,6 +53,7 @@ flutter:
     - data/menu_options_splash.json
     - data/menu_options_onboarding.json
     - data/menu_options_login.json
+    - data/menu_options_widget.json
     - assets/images/loading.gif
     - assets/images/one.png
     - assets/images/background.jpg

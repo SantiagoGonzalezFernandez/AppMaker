@@ -4,11 +4,21 @@ import 'package:flutter/material.dart';
 
 //Imports that are mine
 
-class LoginOnePage extends StatelessWidget {
+class SignUpPage extends StatefulWidget {
+  @override
+  _SignUpPageState createState() => _SignUpPageState();
+}
 
+class _SignUpPageState extends State<SignUpPage> {
+  
+  var _currencies = ['Developer', 'Hospitality', 'Films Maker'];
+
+  String _currentItemSelected;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -34,7 +44,7 @@ class LoginOnePage extends StatelessWidget {
                     FadeAnimation(
                       delay: 1,
                       child: Text(
-                        'Login',
+                        'Sign Up',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 40.0
@@ -45,7 +55,7 @@ class LoginOnePage extends StatelessWidget {
                     FadeAnimation(
                       delay: 1.3,
                       child: Text(
-                        'Welcome Back',
+                        'Welcome',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18.0
@@ -95,7 +105,62 @@ class LoginOnePage extends StatelessWidget {
                                   ),
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      hintText: 'Email or Phone number',
+                                      hintText: 'Name',
+                                      hintStyle: TextStyle(
+                                        color: Colors.grey
+                                      ),
+                                      border: InputBorder.none
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(10.0),
+                                  decoration: BoxDecoration(
+                                    border: Border(
+                                      bottom: BorderSide(
+                                        color: Colors.grey[200]
+                                      )
+                                    )
+                                  ),
+                                  child: DropdownButton<String>(
+                                    items: _currencies.map((String dropDownStringItem){
+                                      return DropdownMenuItem<String>(
+                                        value: dropDownStringItem,
+                                        child: Text(dropDownStringItem),
+                                      );
+                                    }).toList(),
+                                    onChanged: (String newValueSelected) {
+                                      //Your code to execute, when a menu item is selected from drop down
+                                      _onDropDownItemSelected(newValueSelected);
+                                    },
+                                    value: _currentItemSelected,
+                                    isExpanded: true,
+                                    hint: Text(
+                                      'Labor',
+                                      style: TextStyle(
+                                        color: Colors.grey
+                                      ),
+                                    ), 
+                                    icon: Icon(Icons.arrow_drop_down),
+                                    underline: DecoratedBox(
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFBDBDBD)
+                                      ),
+                                    ),
+                                  )
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(10.0),
+                                  decoration: BoxDecoration(
+                                    border: Border(
+                                      bottom: BorderSide(
+                                        color: Colors.grey[200]
+                                      )
+                                    )
+                                  ),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      hintText: 'Email',
                                       hintStyle: TextStyle(
                                         color: Colors.grey
                                       ),
@@ -128,16 +193,6 @@ class LoginOnePage extends StatelessWidget {
                         ),
                         SizedBox(height: 40.0,),
                         FadeAnimation(
-                          delay: 1.5,
-                          child: Text(
-                            'Forgot Password?',
-                            style: TextStyle(
-                              color: Colors.grey
-                            ),  
-                          ),
-                        ), 
-                        SizedBox(height: 40.0,),
-                        FadeAnimation(
                           delay: 1.6,
                           child: Container(
                             height: 50,
@@ -148,7 +203,7 @@ class LoginOnePage extends StatelessWidget {
                             ),
                             child: Center(
                               child: Text(
-                                'Login',
+                                'Sign Up',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold
@@ -157,78 +212,19 @@ class LoginOnePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 30.0,),
-                        FadeAnimation(
-                          delay: 1.7,
-                          child: Text(
-                            'Continue with social media',
-                            style: TextStyle(
-                              color: Colors.grey
-                            ),  
-                          ),
-                        ), 
-                        SizedBox(height: 30.0,),
-                        Row(
-                          children: [
-                            Expanded(
-                              child: FadeAnimation(
-                                delay: 1.8,
-                                child: Container(
-                                  height: 50.0,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50.0),
-                                    color: Colors.blue
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'Facebook',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(width: 30),
-                            Expanded(
-                              child: FadeAnimation(
-                                delay: 1.8,
-                                child: Container(
-                                  height: 50.0,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50.0),
-                                    color: Colors.black
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'Github',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            
-                          ],
-                        ),
-                        SizedBox(height: 11.0),
-                        FadeAnimation(
-                          delay: 1.9,
-                          child: GestureDetector(
-                            onTap: () => Navigator.pushNamed(context, 'signUpOne'),
+                        SizedBox(height: 40.0),
+                        GestureDetector(
+                          onTap: () => Navigator.pushNamed(context, 'loginOne'),
+                          child: FadeAnimation(
+                            delay: 1.5,
                             child: Text(
-                              "You don't have an account? Sign up",
+                              'Already have an account? Login',
                               style: TextStyle(
                                 color: Colors.grey
                               ),  
                             ),
                           ),
-                        ),
+                        ), 
                       ],
                     ),
                   ),
@@ -240,6 +236,9 @@ class LoginOnePage extends StatelessWidget {
       ),
     );
   }
+  void _onDropDownItemSelected(String newValueSelected){
+    setState(() {
+      this._currentItemSelected = newValueSelected;
+    });
+  }
 }
-
-//https://www.youtube.com/watch?v=txvyAO894DY
